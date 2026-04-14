@@ -1,0 +1,71 @@
+{
+  "title": "Green Mountain Power",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Green Mountain Power",
+        "description": "Enter your Green Mountain Power account details.",
+        "data": {
+          "account_number": "Account number",
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error",
+      "invalid_schedule": "Invalid schedule settings"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Sync mode",
+        "description": "Choose how often to sync usage data.",
+        "data": {
+          "sync_mode": "Sync mode"
+        }
+      },
+      "interval": {
+        "title": "Interval settings",
+        "data": {
+          "sync_interval_hours": "Sync interval",
+          "history_days": "Sync lookback days"
+        }
+      },
+      "daily": {
+        "title": "Daily sync settings",
+        "data": {
+          "daily_sync_time": "Sync time",
+          "history_days": "Sync lookback days"
+        }
+      }
+    },
+    "error": {
+      "invalid_schedule": "Invalid schedule settings"
+    }
+  },
+  "entity": {
+    "button": {
+      "sync_now": {
+        "name": "Sync now"
+      }
+    },
+    "sensor": {
+      "latest_hourly_usage": {
+        "name": "Latest hourly usage"
+      },
+      "latest_hourly_interval_start": {
+        "name": "Latest hourly interval start"
+      },
+      "imported_hourly_records": {
+        "name": "Imported hourly records"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+refresh_history:
+  name: Refresh history
+  description: Download the latest hourly Green Mountain Power usage using the configured lookback window and import it into statistics.
+  fields:
+    entry_id:
+      name: Config entry ID
+      description: Optional. Limit the refresh to a specific Green Mountain Power config entry.
+      required: false
+      selector:
+        text:
